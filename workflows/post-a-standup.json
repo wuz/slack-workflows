@@ -11,7 +11,7 @@
         "config": {
           "name": "Create Standup",
           "channels": [
-            "CG9MPPF42"
+            ""
           ],
           "callback_id": "df91ad19-aab0-40dd-bd40-5ed630445dde",
           "description": "Create Standup"
