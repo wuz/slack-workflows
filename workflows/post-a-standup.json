@@ -1,0 +1,79 @@
+{
+  "source_id": "271326691920460874",
+  "version": "1",
+  "workflow": {
+    "name": "Post a standup",
+    "blueprint": {
+      "version": "1",
+      "trigger": {
+        "type": "channel_action",
+        "id": "8c5922fe-7e96-4b68-8e5e-0d5446713334",
+        "config": {
+          "name": "Create Standup",
+          "channels": [
+            "CG9MPPF42"
+          ],
+          "callback_id": "df91ad19-aab0-40dd-bd40-5ed630445dde",
+          "description": "Create Standup"
+        }
+      },
+      "steps": [
+        {
+          "type": "dialog",
+          "id": "8b219437-cb06-4ee2-817c-d89cea81d6c9",
+          "config": {
+            "dialog_title": "Today's Standup",
+            "dialog_elements": [
+              {
+                "name": "8e18b186-e1ca-4347-b107-15230d8b896c",
+                "type": "text",
+                "label": "Add a greeting:",
+                "subtype": "",
+                "optional": false,
+                "placeholder": ""
+              },
+              {
+                "name": "d3a3c9da-89a0-4db4-85a4-46c0e4f25b32",
+                "type": "text",
+                "label": "How are you feeling today?",
+                "subtype": "",
+                "optional": true,
+                "placeholder": ""
+              },
+              {
+                "name": "fa819839-e87a-4a4e-8f7a-9407707fa7ef",
+                "type": "text",
+                "label": "What are you working on today?",
+                "subtype": "",
+                "optional": false,
+                "placeholder": ""
+              },
+              {
+                "name": "2d97aac8-77e5-4e2c-85d5-37b0dbe0f1da",
+                "type": "text",
+                "label": "Do you have any blockers today?",
+                "subtype": "",
+                "optional": false,
+                "placeholder": ""
+              },
+              {
+                "name": "75718b86-a3df-49b8-bca5-8407cd2b61c9",
+                "type": "text",
+                "label": "Anything else you want to add?",
+                "subtype": "",
+                "optional": false,
+                "placeholder": ""
+              }
+            ],
+            "results_channel": {
+              "ref": "8c5922fe-7e96-4b68-8e5e-0d5446713334==channel"
+            },
+            "dialog_submit_label": "",
+            "delivery_button_label": "Open Form",
+            "delivery_message_text": "Hello! To get started, please fill out this form."
+          }
+        }
+      ]
+    }
+  }
+}
