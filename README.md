@@ -12,6 +12,8 @@ Download the JSON files and import them into Slack
 
 ---
 
+[Download All](releases/tag/v1.0)
+
 ## Workflows
 
 ### [Post a Standup](workflows/post-a-standup.json)
